@@ -115,30 +115,33 @@ export default function About() {
           />
 
           {/* Main image container */}
-          <div className="relative rounded-3xl overflow-hidden aspect-[4/5] bg-neutral-100">
-            <Image
-              src="https://tagsbikez.vercel.app/_next/static/media/bulletimg.0is61uxl_20g..png"
-              alt="Tags Bikez Showroom — Royal Enfield Thrissur"
-              fill
-              className="object-cover"
-            />
+         {/* Main image container */}
+<div className="relative rounded-3xl overflow-hidden h-full min-h-[600px] bg-neutral-100">
+  <Image
+    src="/images/image-2.png"
+    alt="Tags Bikez Showroom — Royal Enfield Thrissur"
+    fill
+    sizes="(max-width: 1024px) 100vw, 50vw"
+    className="object-cover object-center"
+    priority
+  />
 
-            {/* Bottom badge */}
-            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-6">
-              <p className="text-white font-display text-xl font-bold">Tags Bikez</p>
-              <p className="text-white/70 text-xs tracking-widest mt-1">
-                ROYAL ENFIELD · AUTHORISED DEALER · THRISSUR
-              </p>
-            </div>
+  {/* Bottom badge */}
+  <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+    <p className="text-white font-display text-xl font-bold">Tags Bikez</p>
+    <p className="text-white/70 text-xs tracking-widest mt-1">
+      ROYAL ENFIELD · AUTHORISED DEALER · THRISSUR
+    </p>
+  </div>
 
-            {/* Est. badge */}
-            <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-brand-red" />
-              <span className="text-[10px] tracking-widest font-bold text-neutral-700">
-                EST. THRISSUR
-              </span>
-            </div>
-          </div>
+  {/* Est. badge */}
+  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2">
+    <span className="w-2 h-2 rounded-full bg-brand-red" />
+    <span className="text-[10px] tracking-widest font-bold text-neutral-700">
+      EST. THRISSUR
+    </span>
+  </div>
+</div>
         </motion.div>
 
       </div>

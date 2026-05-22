@@ -16,8 +16,8 @@ export const models = [
 export const categories = ["All", "Classic", "Roadster", "Cruiser", "Cafe Racer", "Adventure"] as const;
 
 export const banners = [
-  "https://api.tagsbikez.com/media/home/banners/banner1.png",
-  "https://api.tagsbikez.com/media/home/banners/banner2.png",
+  "/images/banner-1.png",
+  "/images/banner-2.png",
 ];
 
 export const galleryImages = [
